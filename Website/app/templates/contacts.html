@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="py-20 px-4 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">
+      {% if lang == 'ru' %}Контакты{% else %}Contacts{% endif %}
+    </h1>
+
+    <div class="text-lg text-gray-700 space-y-4">
+      {% if lang == 'ru' %}
+        <p><strong>Контакты CEO:</strong></p>
+        <p>📞 Номер: +7 747 773 67 17</p>
+        <p>💬 Telegram: <a href="https://t.me/semakh179" target="_blank" class="text-blue-600 underline">@ceo_projectify</a></p>
+        <p>📧 Почта: <a href="mailto:projectify.dev@gmail.com" class="text-blue-600 underline">projectify.dev@gmail.com</a></p>
+        <p class="mt-6">Если вам интересен наш продукт, подпишитесь на наш <a href="https://www.instagram.com/projectify.dev/?igsh=MWg2eXprcHgza2RoYg%3D%3D#" target="_blank" class="text-pink-600 underline">Instagram</a>.</p>
+      {% else %}
+        <p><strong>CEO Contacts:</strong></p>
+        <p>📞 Phone: +7 747 773 67 17</p>
+        <p>💬 Telegram: <a href="https://t.me/semakh179" target="_blank" class="text-blue-600 underline">@ceo_projectify</a></p>
+        <p>📧 Email: <a href="mailto:projectify.dev@gmail.com" class="text-blue-600 underline">projectify.dev@gmail.com</a></p>
+        <p class="mt-6">If you're interested in our product, follow us on <a href="https://www.instagram.com/projectify.dev/?igsh=MWg2eXprcHgza2RoYg%3D%3D#" target="_blank" class="text-pink-600 underline">Instagram</a>.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

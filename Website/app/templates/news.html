@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8 text-center">
+      {% if lang == 'ru' %}Новости{% else %}News{% endif %}
+    </h1>
+
+    <div class="space-y-8">
+      <!-- 1. Projectify Beta Launch — 04.05.2025 -->
+      <article class="bg-white shadow-md p-6 rounded-xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          {% if lang == 'ru' %}🚀 Запуск Projectify Beta!{% else %}🚀 Projectify Beta Launch!{% endif %}
+        </h2>
+        <p class="text-sm text-gray-500 mb-2">04.05.2025</p>
+        <p class="text-gray-700">
+          {% if lang == 'ru' %}
+            Мы официально запустили бета-версию Projectify! В скором времени мы соберем отзывы первых пользователей и оптимизируем функциональность и интерфейс.
+          {% else %}
+            We've officially launched the beta version of Projectify! We will soon collect feedback from the first users and optimize the functionality and interface.
+          {% endif %}
+        </p>
+      </article>
+
+      <!-- 2. Projectify Secures Funding Agreement — 16.04.2025 -->
+      <article class="bg-white shadow-md p-6 rounded-xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          {% if lang == 'ru' %}🤝 Достигнута договорённость о финансировании Projectify!{% else %}🤝 Projectify Secures Funding Agreement!{% endif %}
+        </h2>
+        <p class="text-sm text-gray-500 mb-2">16.04.2025</p>
+        <p class="text-gray-700">
+          {% if lang == 'ru' %}
+            Мы достигли предварительной договоренности с инвестором о финансировании после выхода MVP на рынок.
+          {% else %}
+            We have reached a preliminary agreement with the investor on financing after the MVP enters the market.
+          {% endif %}
+        </p>
+      </article>
+
+      <!-- 3. Accelerated at Astana Hub — 22.03.2025 -->
+      <article class="bg-white shadow-md p-6 rounded-xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          {% if lang == 'ru' %}🚀 Успешно прошли акселерацию в Astana Hub (апрель–июнь){% else %}🚀 Successfully Accelerated at Astana Hub (April–June){% endif %}
+        </h2>
+        <p class="text-sm text-gray-500 mb-2">22.03.2025</p>
+        <p class="text-gray-700">
+          {% if lang == 'ru' %}
+            Мы прошли акселерацию в Astana Hub (апрель–июнь), доработали продукт с учетом менторской поддержки и первых пользовательских сценариев.
+          {% else %}
+            We accelerated at the Astana Hub (April–June), finalized the product taking into account mentoring support and the first user scenarios.
+          {% endif %}
+        </p>
+      </article>
+
+      <!-- 4. MVP Functional — 28.02.2025 -->
+      <article class="bg-white shadow-md p-6 rounded-xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          {% if lang == 'ru' %}📦 Прогресс MVP: проекты, задачи и подписки реализованы{% else %}📦 MVP Progress: Projects, Tasks & Subscriptions Functional{% endif %}
+        </h2>
+        <p class="text-sm text-gray-500 mb-2">28.02.2025</p>
+        <p class="text-gray-700">
+          {% if lang == 'ru' %}
+            Мы разработали рабочий прототип с базовыми функциями: создание проектов, задач и сбор подписок.
+          {% else %}
+            We have developed a functional prototype with basic features: creating projects, tasks, and collecting subscriptions.
+          {% endif %}
+        </p>
+      </article>
+
+      <!-- 5. Validated Idea — 24.01.2025 -->
+      <article class="bg-white shadow-md p-6 rounded-xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          {% if lang == 'ru' %}🔍 Подтверждено: новичкам нужен опыт на реальных проектах{% else %}🔍 Validated: Real-Project Learning Is What Newcomers Need{% endif %}
+        </h2>
+        <p class="text-sm text-gray-500 mb-2">24.01.2025</p>
+        <p class="text-gray-700">
+          {% if lang == 'ru' %}
+            Мы исследовали рынок и подтвердили потребность в платформе, которая помогает новичкам в IT получать практический опыт через реальные проекты.
+          {% else %}
+            We explored the market and confirmed the need for a platform that helps newcomers to IT gain practical experience through real projects.
+          {% endif %}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
+
+

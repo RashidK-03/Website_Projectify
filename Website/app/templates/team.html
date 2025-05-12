@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="py-20 px-4 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">
+      {% if lang == 'ru' %}О нас{% else %}About Us{% endif %}
+    </h1>
+
+    <p class="text-gray-700 mb-12 text-lg">
+      {% if lang == 'ru' %}
+        Мы — команда энтузиастов, стремящихся помочь начинающим специалистам в IT получить ценный опыт и построить карьеру через реальные проекты и сообщество.
+      {% else %}
+        We are a team of enthusiasts aiming to help aspiring IT professionals gain real-world experience and grow their careers through projects and community.
+      {% endif %}
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+      <!-- Участник 1 -->
+      <div class="bg-white rounded-xl shadow p-6">
+  <h3 class="text-xl font-semibold mb-2">Sanzhar Akhmedov</h3>
+  <p class="text-gray-600 mb-3">
+    {% if lang == 'ru' %}
+      CEO и основатель Projectify. Руководит стратегическим развитием и продуктом.
+    {% else %}
+      CEO and founder of Projectify. Leads strategic development and product direction.
+    {% endif %}
+  </p>
+  <a href="https://t.me/semakh179" target="_blank" class="inline-flex items-center text-blue-600 hover:underline font-medium text-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+      10-4.48 10-10S17.52 2 12 2zm4.89 7.86l-1.4
+      6.6c-.11.5-.4.62-.82.39l-2.28-1.68-1.1
+      1.06c-.12.12-.23.23-.47.23l.17-2.45
+      4.46-4.03c.19-.17-.04-.26-.29-.1l-5.5
+      3.45-2.36-.74c-.51-.16-.52-.5.1-.74l9.21-3.54c.43-.16.81.1.67.73z"/>
+    </svg>
+    @semakh179
+  </a>
+</div>
+
+
+      <!-- Участник 2 -->
+      <div class="bg-white rounded-xl shadow p-6">
+  <h3 class="text-xl font-semibold mb-2">Valikhan Aldiyarov</h3>
+  <p class="text-gray-600 mb-3">
+    {% if lang == 'ru' %}
+      Сооснователь стартапа. Участвует в разработке и отвечает за ключевые направления проекта.
+    {% else %}
+      Co-founder of a startup. Participates in the development and responsible for the key areas of the project.
+    {% endif %}
+  </p>
+  <a href="https://t.me/jenecompendepas" target="_blank" class="inline-flex items-center text-blue-600 hover:underline font-medium text-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+      10-4.48 10-10S17.52 2 12 2zm4.89 7.86l-1.4
+      6.6c-.11.5-.4.62-.82.39l-2.28-1.68-1.1
+      1.06c-.12.12-.23.23-.47.23l.17-2.45
+      4.46-4.03c.19-.17-.04-.26-.29-.1l-5.5
+      3.45-2.36-.74c-.51-.16-.52-.5.1-.74l9.21-3.54c.43-.16.81.1.67.73z"/>
+    </svg>
+    @jenecompendepas
+  </a>
+</div>
+
+
+        <!-- Участник 3 -->
+      <div class="bg-white rounded-xl shadow p-6">
+  <h3 class="text-xl font-semibold mb-2">Rashid Kenzhegul</h3>
+  <p class="text-gray-600 mb-3">
+    {% if lang == 'ru' %}
+      Разработчик. Отвечает за создание и поддержку ключевых функций платформы.
+    {% else %}
+      Developer. Responsible for the creation and support of key functions of the platform.
+    {% endif %}
+  </p>
+  <a href="https://t.me/exodus_hermitage" target="_blank" class="inline-flex items-center text-blue-600 hover:underline font-medium text-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+      10-4.48 10-10S17.52 2 12 2zm4.89 7.86l-1.4
+      6.6c-.11.5-.4.62-.82.39l-2.28-1.68-1.1
+      1.06c-.12.12-.23.23-.47.23l.17-2.45
+      4.46-4.03c.19-.17-.04-.26-.29-.1l-5.5
+      3.45-2.36-.74c-.51-.16-.52-.5.1-.74l9.21-3.54c.43-.16.81.1.67.73z"/>
+    </svg>
+    @exodus_hermitage
+  </a>
+</div>
+
+
+      <!-- Можно добавить больше участников здесь -->
+    </div>
+  </div>
+</section>
+{% endblock %}

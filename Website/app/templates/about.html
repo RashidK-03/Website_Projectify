@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="py-20 px-4 max-w-4xl mx-auto">
+  <h1 class="text-3xl font-bold text-center mb-10">
+    {% if lang == 'ru' %}
+      О проекте Projectify
+    {% else %}
+      About Projectify
+    {% endif %}
+  </h1>
+
+  <!-- Бизнес-идея -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">
+      {% if lang == 'ru' %}
+        💡 Бизнес-идея
+      {% else %}
+        💡 Business Idea
+      {% endif %}
+    </h2>
+    <p class="text-lg">
+      {% if lang == 'ru' %}
+        Projectify — это платформа для начинающих IT-специалистов, где они могут получить реальный опыт, выполняя задачи, приближенные к условиям реального бизнеса.
+      {% else %}
+        Projectify is a platform for beginner IT specialists to gain real-world experience by working on tasks similar to those in the industry.
+      {% endif %}
+    </p>
+  </div>
+
+  <!-- Видео и презентация -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-4">
+      {% if lang == 'ru' %}
+        🎥 Видео и презентация
+      {% else %}
+        🎥 Video and Presentation
+      {% endif %}
+    </h2>
+
+    <!-- YouTube-видео -->
+    <div class="mb-6 aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-64 rounded-xl shadow"
+              src="https://www.youtube.com/embed/1GYX_SKVwmI"
+              title="Projectify Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+
+    <!-- Ссылка на презентацию -->
+    <a href="/static/presentation-pitchdeck.pdf" target="_blank"
+       class="inline-block mt-2 text-blue-600 hover:underline">
+      {% if lang == 'ru' %}
+        Открыть презентацию (PDF)
+      {% else %}
+        Open the presentation (PDF)
+      {% endif %}
+    </a>
+  </div>
+</section>
+{% endblock %}
